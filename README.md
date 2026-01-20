@@ -27,7 +27,7 @@ DevOps and Platform Engineer with deep experience in containerization, Kubernete
 
 ---
 
-### Pantomath — Senior DevOps / Platform Engineer  
+### Pantomath — Software Engineer  
 *January 2023 – July 2023*
 
 - Developed Node.js microservices for secure client database exports and data extraction.
@@ -36,7 +36,7 @@ DevOps and Platform Engineer with deep experience in containerization, Kubernete
 
 ---
 
-### Kroger — Systems / DevOps Engineer  
+### Kroger — Software Engineering Manager
 *February 2013 – April 2022*
 
 - Designed, deployed, and supported large-scale infrastructure for retail applications.
