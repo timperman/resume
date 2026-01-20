@@ -39,7 +39,11 @@ DevOps and Platform Engineer with deep experience in containerization, Kubernete
 ### Kroger — Software Engineering Manager
 *February 2013 – April 2022*
 
-- Designed, deployed, and supported large-scale infrastructure for retail applications.
+- Led Core Engineering, a cross-organizational enablement team that partnered with product teams to modernize applications for cloud deployments and to implement best practices such as containerization, CI/CD pipelines, and monitoring.
+- Led large-scale migrations including:
+  - Migrating on-prem deployments to cloud and on-prem Kubernetes clusters.
+  - Migrating code repositories from on-prem GitLab and GitHub Enterprise to GitHub.com.
+  - Migrating CI/CD pipelines from GitLab CI and TeamCity to GitHub Actions.
 - Automated build and deployment pipelines across multiple platforms.
 - Led early container adoption and platform standardization initiatives.
 - Collaborated with engineering teams to improve reliability, performance, and scalability.
@@ -64,9 +68,9 @@ Western Kentucky University — *December 2004*
 
 ## Technical Skills
 
-**Cloud & Automation:** AWS, Terraform, Ansible  
+**Cloud & Automation:** AWS, Azure, Terraform, Google Cloud  
 **Containers & Orchestration:** Docker, Kubernetes (EKS), Helm  
-**CI/CD:** GitHub Actions, GitLab CI, Flux, Jenkins
+**CI/CD:** GitHub Actions, GitLab CI, Flux, Jenkins  
 **Languages & Scripting:** Node.js, TypeScript, Go, Java, Python, Bash  
 **Monitoring & Observability:** Prometheus, Grafana, ELK  
 **Platforms:** Linux, Hybrid Cloud / On-Prem
