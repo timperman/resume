@@ -66,7 +66,7 @@ Western Kentucky University — *December 2004*
 
 **Cloud & Automation:** AWS, Terraform, Ansible  
 **Containers & Orchestration:** Docker, Kubernetes (EKS), Helm  
-**CI/CD:** Jenkins, GitHub Actions, GitLab CI  
-**Languages & Scripting:** Node.js, Python, Bash  
+**CI/CD:** GitHub Actions, GitLab CI, Flux, Jenkins
+**Languages & Scripting:** Node.js, TypeScript, Go, Java, Python, Bash  
 **Monitoring & Observability:** Prometheus, Grafana, ELK  
 **Platforms:** Linux, Hybrid Cloud / On-Prem
