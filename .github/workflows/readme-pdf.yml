@@ -60,7 +60,7 @@ jobs:
               pandoc README.md \
                 --pdf-engine=lualatex \
                 -H header.tex \
-                --lua-filter=filters/drop_github_only.lua \
+                --lua-filter=filters/drop-github-only.lua \
                 -V mainfont="Noto Sans" \
                 -V monofont="Noto Sans Mono" \
                 -V fontsize=11pt \
