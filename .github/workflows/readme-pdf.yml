@@ -46,7 +46,8 @@ jobs:
                   ttf-dejavu \
                   font-noto \
                   font-noto-cjk \
-                  font-noto-emoji
+                  font-noto-emoji \
+                  texlive-latex-extra
               else
                 echo "No supported package manager found (apt-get/apk)."
                 exit 1
