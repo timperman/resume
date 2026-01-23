@@ -1,16 +1,9 @@
 % header.tex
 \usepackage{fontspec}
-\usepackage{newunicodechar}
 
 % Match GitHub-ish look
 \setmainfont{Noto Sans}
 \setmonofont{Noto Sans Mono}
 
 % Emoji font (installed in container)
-\newfontfamily\EmojiFont{Noto Color Emoji}[Renderer=Harfbuzz]
-
-% Map specific emoji used in README
-\newunicodechar{📧}{{\EmojiFont 📧}}
-\newunicodechar{📞}{{\EmojiFont 📞}}
-\newunicodechar{🔗}{{\EmojiFont 🔗}}
-\newunicodechar{💻}{{\EmojiFont 💻}}
+\usepackage{fontawesome5}

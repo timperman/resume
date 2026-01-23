@@ -2,10 +2,22 @@
 **DevOps / Cloud Engineer**  
 Cincinnati, OH  
 
+<!-- BEGIN: GitHub-only contact (emoji) -->
 📧 brett.timperman@gmail.com  
 📞 (513) 713-5314  
 🔗 [LinkedIn](https://www.linkedin.com/in/brett-timperman)  
 💻 [GitHub](https://github.com/timperman)
+<!-- END: GitHub-only contact (emoji) -->
+
+```{=latex}
+% BEGIN: PDF-only contact (Font Awesome)
+\begin{flushleft}
+\faEnvelope\ brett.timperman@gmail.com\\
+\faPhone\ (513) 713-5314\\
+\faLinkedin\ \href{https://www.linkedin.com/in/brett-timperman}{LinkedIn}\\
+\faGithub\ \href{https://github.com/timperman}{GitHub}
+\end{flushleft}
+% END: PDF-only contact (Font Awesome)
 
 ---
 
@@ -62,7 +74,17 @@ Western Kentucky University — *December 2004*
 ### DockerCon 2016 — Technical Presenter
 
 - Presented on production Docker workflows and containerization best practices.
+
+<!-- BEGIN: GitHub-only presentation -->
 - 🎥 Video: https://www.youtube.com/watch?v=sHS6jhXCwWM
+<!-- END: GitHub-only presentation -->
+
+```{=latex}
+% BEGIN: PDF-only presentation
+\begin{itemize}
+  \item \faYoutube\ \href{https://www.youtube.com/watch?v=sHS6jhXCwWM}{https://www.youtube.com/watch?v=sHS6jhXCwWM}
+\end{itemize}
+% END: PDF-only presentation
 
 ---
 
