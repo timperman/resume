@@ -21,11 +21,13 @@ jobs:
       - name: Generate PDF (XeLaTeX + GitHub-like fonts)
         run: |
           docker run --rm \
+            --entrypoint bash \
             -v "${PWD}:/data" \
             -w /data \
             pandoc/latex:latest \
-            bash -lc '
+            -lc '
               set -euo pipefail
+
               apt-get update
               apt-get install -y --no-install-recommends \
                 fonts-noto \
