@@ -56,7 +56,7 @@ jobs:
 
               echo "== Building PDF with XeLaTeX =="
               pandoc README.md \
-                --pdf-engine=xelatex \
+                --pdf-engine=lualatex \
                 -V mainfont="Noto Sans" \
                 -V monofont="Noto Sans Mono" \
                 -V fontsize=11pt \
