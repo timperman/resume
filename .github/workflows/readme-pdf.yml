@@ -47,7 +47,8 @@ jobs:
                   font-noto \
                   font-noto-cjk \
                   font-noto-emoji \
-                  texlive-latex-extra
+                  texlive \
+                  texmf-dist
               else
                 echo "No supported package manager found (apt-get/apk)."
                 exit 1
