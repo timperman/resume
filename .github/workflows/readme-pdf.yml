@@ -2,8 +2,7 @@ name: Generate README PDF
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
       - .github/workflows/readme-pdf.yml
       - README.md
@@ -12,31 +11,44 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  generate-pdf:
+    name: Generate RESUME.pdf
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate PDF (XeLaTeX)
-        uses: docker://pandoc/latex:latest
-        with:
-          args: >-
-            README.md
-            --pdf-engine=xelatex
-            --output=RESUME.pdf
+      - name: Generate PDF (XeLaTeX + GitHub-like fonts)
+        run: |
+          docker run --rm \
+            -v "${PWD}:/data" \
+            -w /data \
+            pandoc/latex:latest \
+            bash -lc '
+              set -euo pipefail
+              apt-get update
+              apt-get install -y --no-install-recommends \
+                fonts-noto \
+                fonts-noto-mono \
+                fonts-noto-color-emoji
+              fc-cache -f
+
+              pandoc README.md \
+                --pdf-engine=xelatex \
+                -V mainfont="Noto Sans" \
+                -V monofont="Noto Sans Mono" \
+                -V fontsize=11pt \
+                -V geometry:margin=1in \
+                -o RESUME.pdf
+            '
 
       - name: Verify output exists
         run: |
           ls -la
-          if [ ! -f RESUME.pdf ]; then
-            echo "RESUME.pdf was not generated."
-            exit 1
-          fi
+          test -f RESUME.pdf
 
       - name: Commit PDF
         run: |
-          # git diff doesn't detect untracked files; use status instead.
           if ! git status --porcelain -- RESUME.pdf | grep -q .; then
             echo "No changes to commit."
             exit 0
@@ -44,7 +56,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
           git add RESUME.pdf
           git commit -m "chore: update RESUME PDF from README.md"
           git push
