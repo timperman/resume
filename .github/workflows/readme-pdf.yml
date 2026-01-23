@@ -18,23 +18,42 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate PDF (XeLaTeX + GitHub-like fonts)
+      - name: Generate PDF (XeLaTeX + GitHub-ish fonts + emoji)
         run: |
           docker run --rm \
-            --entrypoint bash \
+            --entrypoint /bin/sh \
             -v "${PWD}:/data" \
             -w /data \
             pandoc/latex:latest \
-            -lc '
-              set -euo pipefail
+            -c '
+              set -e
 
-              apt-get update
-              apt-get install -y --no-install-recommends \
-                fonts-noto \
-                fonts-noto-mono \
-                fonts-noto-color-emoji
-              fc-cache -f
+              echo "== OS info =="
+              (cat /etc/os-release || true)
+              echo "== Installing fonts =="
 
+              if command -v apt-get >/dev/null 2>&1; then
+                apt-get update
+                apt-get install -y --no-install-recommends \
+                  fontconfig \
+                  fonts-noto \
+                  fonts-noto-mono \
+                  fonts-noto-color-emoji
+                rm -rf /var/lib/apt/lists/*
+              elif command -v apk >/dev/null 2>&1; then
+                apk add --no-cache \
+                  fontconfig \
+                  noto-fonts \
+                  noto-fonts-emoji \
+                  ttf-dejavu
+              else
+                echo "No supported package manager found (apt-get/apk)."
+                exit 1
+              fi
+
+              fc-cache -f || true
+
+              echo "== Building PDF with XeLaTeX =="
               pandoc README.md \
                 --pdf-engine=xelatex \
                 -V mainfont="Noto Sans" \
@@ -42,8 +61,9 @@ jobs:
                 -V fontsize=11pt \
                 -V geometry:margin=1in \
                 -o RESUME.pdf
-            '
 
+              ls -la RESUME.pdf
+            '
       - name: Verify output exists
         run: |
           ls -la
