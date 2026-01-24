@@ -12,13 +12,13 @@ Cincinnati, OH
 ```{=latex}
 % BEGIN: PDF-only contact (Font Awesome)
 \begin{flushleft}
-\faEnvelope\ brett.timperman@gmail.com\\
-\faPhone\ (513) 713-5314\\
-\faLinkedin\ \href{https://www.linkedin.com/in/brett-timperman}{LinkedIn}\\
-\faGithub\ \href{https://github.com/timperman}{GitHub}
+\IconEnvelope\ brett.timperman@gmail.com\\
+\IconPhone\ (513) 713-5314\\
+\IconLinkedIn\ \href{https://www.linkedin.com/in/brett-timperman}{LinkedIn}\\
+\IconGitHub\ \href{https://github.com/timperman}{GitHub}
 \end{flushleft}
 % END: PDF-only contact (Font Awesome)
-
+```
 ---
 
 ## Professional Summary
@@ -82,10 +82,10 @@ Western Kentucky University — *December 2004*
 ```{=latex}
 % BEGIN: PDF-only presentation
 \begin{itemize}
-  \item \faYoutube\ \href{https://www.youtube.com/watch?v=sHS6jhXCwWM}{https://www.youtube.com/watch?v=sHS6jhXCwWM}
+  \item \IconVideo\ \href{https://www.youtube.com/watch?v=sHS6jhXCwWM}{https://www.youtube.com/watch?v=sHS6jhXCwWM}
 \end{itemize}
 % END: PDF-only presentation
-
+```
 ---
 
 ## Technical Skills
