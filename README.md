@@ -8,7 +8,6 @@ Cincinnati, OH
 🔗 [LinkedIn](https://www.linkedin.com/in/brett-timperman)  
 💻 [GitHub](https://github.com/timperman)
 <!-- END: GitHub-only contact (emoji) -->
-
 <!-- BEGIN: PDF-only contact
 \begin{flushleft}
 \IconEnvelope\ brett.timperman@gmail.com\\
@@ -17,6 +16,7 @@ Cincinnati, OH
 \IconGitHub\ \href{https://github.com/timperman}{GitHub}
 \end{flushleft}
 END: PDF-only contact -->
+
 ---
 
 ## Professional Summary
@@ -72,11 +72,9 @@ Western Kentucky University — *December 2004*
 ### DockerCon 2016 — Technical Presenter
 
 - Presented on production Docker workflows and containerization best practices.
-
 <!-- BEGIN: GitHub-only presentation -->
 - 🎥 Video: https://www.youtube.com/watch?v=sHS6jhXCwWM
 <!-- END: GitHub-only presentation -->
-
 <!-- BEGIN: PDF-only presentation
 \begin{itemize}
   \item \IconVideo\ \href{https://www.youtube.com/watch?v=sHS6jhXCwWM}{https://www.youtube.com/watch?v=sHS6jhXCwWM}

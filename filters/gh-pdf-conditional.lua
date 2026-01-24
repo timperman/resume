@@ -1,38 +1,54 @@
 -- filters/gh_pdf_conditionals.lua
--- Handles:
---  - GitHub-only blocks (removed)
---  - PDF-only blocks embedded inside a single multiline HTML comment
---
--- Markup:
--- <!-- BEGIN: PDF-only name
---   ...latex...
--- END: PDF-only name -->
 
-local function extract_pdf_only(text)
-  local body = text:match("BEGIN:%s*PDF%-only.-\n(.-)\nEND:%s*PDF%-only")
-  if body then
-    return pandoc.RawBlock("latex", body)
-  end
+local mode = nil
+local pdf_buffer = {}
+
+local function is_begin(text, label)
+  return text:match("BEGIN:%s*" .. label)
+end
+
+local function is_end(text, label)
+  return text:match("END:%s*" .. label)
 end
 
 function RawBlock(el)
-  if el.format ~= "html" then
-    return nil
-  end
+  if el.format == "html" then
+    -- BEGIN blocks
+    if is_begin(el.text, "GitHub%-only") then
+      mode = "github"
+      return {}
+    end
+    if is_begin(el.text, "PDF%-only") then
+      mode = "pdf"
+      pdf_buffer = {}
+      return {}
+    end
 
-  -- Drop GitHub-only blocks entirely
-  if el.text:match("BEGIN:%s*GitHub%-only") then
-    return {}
-  end
+    -- END blocks
+    if is_end(el.text, "GitHub%-only") then
+      mode = nil
+      return {}
+    end
+    if is_end(el.text, "PDF%-only") then
+      mode = nil
+      local latex = table.concat(pdf_buffer, "\n")
+      return pandoc.RawBlock("latex", latex)
+    end
 
-  -- Extract PDF-only blocks and inject as LaTeX
-  local latex = extract_pdf_only(el.text)
-  if latex then
-    return latex
+    -- Collect PDF-only content
+    if mode == "pdf" then
+      table.insert(pdf_buffer, el.text)
+      return {}
+    end
   end
 
   return nil
 end
 
-function Para(_) return nil end
-function Plain(_) return nil end
+-- Drop all content inside GitHub-only or PDF-only blocks
+function Para(_)       if mode then return {} end end
+function Plain(_)      if mode then return {} end end
+function BulletList(_) if mode then return {} end end
+function OrderedList(_)if mode then return {} end end
+function Header(_)     if mode then return {} end end
+function Div(_)        if mode then return {} end end
