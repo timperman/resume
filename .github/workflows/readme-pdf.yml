@@ -60,9 +60,6 @@ jobs:
 
               fc-cache -f || true
 
-              # sanity check (fail fast)
-              kpsewhich fontawesome5.sty >/dev/null 2>&1 || (echo "fontawesome5.sty not found even after installs" && exit 1)
-
               echo "== Building PDF with XeLaTeX =="
               pandoc README.md \
                 --pdf-engine=lualatex \
