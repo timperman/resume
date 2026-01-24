@@ -9,7 +9,7 @@ Cincinnati, OH
 💻 [GitHub](https://github.com/timperman)
 <!-- END: GitHub-only contact (emoji) -->
 
-```{=latex}
+<!-- BEGIN: PDF-only contact -->
 % BEGIN: PDF-only contact (Font Awesome)
 \begin{flushleft}
 \IconEnvelope\ brett.timperman@gmail.com\\
@@ -17,8 +17,7 @@ Cincinnati, OH
 \IconLinkedIn\ \href{https://www.linkedin.com/in/brett-timperman}{LinkedIn}\\
 \IconGitHub\ \href{https://github.com/timperman}{GitHub}
 \end{flushleft}
-% END: PDF-only contact (Font Awesome)
-```
+<!-- END: PDF-only contact -->
 ---
 
 ## Professional Summary
@@ -79,13 +78,11 @@ Western Kentucky University — *December 2004*
 - 🎥 Video: https://www.youtube.com/watch?v=sHS6jhXCwWM
 <!-- END: GitHub-only presentation -->
 
-```{=latex}
-% BEGIN: PDF-only presentation
+<!-- BEGIN: PDF-only presentation -->
 \begin{itemize}
   \item \IconVideo\ \href{https://www.youtube.com/watch?v=sHS6jhXCwWM}{https://www.youtube.com/watch?v=sHS6jhXCwWM}
 \end{itemize}
-% END: PDF-only presentation
-```
+<!-- END: PDF-only presentation -->
 ---
 
 ## Technical Skills
