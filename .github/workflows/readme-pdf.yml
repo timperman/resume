@@ -55,6 +55,8 @@ jobs:
 
               fc-cache -f || true
 
+              pandoc README.md -t native | sed -n '1,200p'
+
               echo "== Building PDF with LuaLaTeX =="
               pandoc README.md \
                 --pdf-engine=lualatex \
