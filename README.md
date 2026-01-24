@@ -10,7 +10,6 @@ Cincinnati, OH
 <!-- END: GitHub-only contact (emoji) -->
 
 <!-- BEGIN: PDF-only contact -->
-% BEGIN: PDF-only contact (Font Awesome)
 \begin{flushleft}
 \IconEnvelope\ brett.timperman@gmail.com\\
 \IconPhone\ (513) 713-5314\\
