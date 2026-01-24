@@ -59,7 +59,7 @@ jobs:
               pandoc README.md \
                 --pdf-engine=lualatex \
                 -H header.tex \
-                --lua-filter=filters/gh-pdf-conditional.lua \
+                --lua-filter=filters/gh_pdf_conditionals.lua \
                 -V mainfont="Noto Sans" \
                 -V monofont="Noto Sans Mono" \
                 -V fontsize=11pt \
