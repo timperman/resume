@@ -1,16 +1,14 @@
 % header.tex
 \usepackage{fontspec}
+\usepackage{hyperref}
 
 % Match GitHub-ish look
 \setmainfont{Noto Sans}
 \setmonofont{Noto Sans Mono}
 
-\usepackage{hyperref}
-% Use Font Awesome v4 (available as fontawesome.sty on Alpine TeX)
-\usepackage{fontawesome}
-
-\newcommand{\IconEnvelope}{\faEnvelope}
-\newcommand{\IconPhone}{\faPhone}
-\newcommand{\IconLinkedIn}{\faLinkedinSquare}
-\newcommand{\IconGitHub}{\faGithub}
-\newcommand{\IconVideo}{\faYoutubePlay}
+% Icon macros
+\newcommand{\IconEnvelope}{✉}
+\newcommand{\IconPhone}{☎}
+\newcommand{\IconLinkedIn}{\textsf{\textbf{in}}}
+\newcommand{\IconGitHub}{\textsf{\textbf{GH}}}
+\newcommand{\IconVideo}{▶}
