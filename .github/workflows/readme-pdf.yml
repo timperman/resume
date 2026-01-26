@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - .github/workflows/readme-pdf.yml
+      - scripts/process_blocks.sh
+      - header.tex
       - README.md
 
 permissions:
@@ -55,13 +57,13 @@ jobs:
 
               fc-cache -f || true
 
-              pandoc README.md -t native | sed -n '1,200p'
+              echo "== Adding PDF-only blocks and removing GitHub-only blocks =="
+              ./scripts/process_blocks.sh README.md README.pdf.md
 
               echo "== Building PDF with LuaLaTeX =="
-              pandoc README.md \
+              pandoc README.pdf.md \
                 --pdf-engine=lualatex \
                 -H header.tex \
-                --lua-filter=filters/gh_pdf_conditionals.lua \
                 -V mainfont="Noto Sans" \
                 -V monofont="Noto Sans Mono" \
                 -V fontsize=11pt \
