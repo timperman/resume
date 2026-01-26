@@ -25,6 +25,12 @@ DevOps and Platform Engineer with deep experience in containerization, Kubernete
 
 ---
 
+## Resume-as-Code
+
+The PDF version of this resume is generated automatically by a public GitHub Actions pipeline in my resume repository (https://github.com/timperman/resume). I maintain the resume by committing changes to `README.md`, which serves as the single source of truth. A GitHub Actions workflow uses Markdown, LaTeX, and lightweight shell scripting to produce a polished PDF and commit it back to the repository. This approach ensures the GitHub-rendered resume and the downloadable PDF remain perfectly in sync, and reflects my commitment to *everything-as-code*—from infrastructure and CI/CD to documentation and workflows.
+
+---
+
 ## Professional Experience
 
 ### Workday — DevOps / Platform Engineer  
