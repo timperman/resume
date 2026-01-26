@@ -5,9 +5,12 @@
 \setmainfont{Noto Sans}
 \setmonofont{Noto Sans Mono}
 
-% Use universally-supported Unicode symbols
-\newcommand{\IconEnvelope}{\symbol{"2709}} % ✉
-\newcommand{\IconPhone}{\symbol{"260E}}    % ☎
+% Symbol font for dingbats that Noto Sans may not include in Alpine
+\newfontfamily\SymbolFont{DejaVu Sans}
+
+\newcommand{\IconEnvelope}{{\SymbolFont ✉}}
+\newcommand{\IconPhone}{{\SymbolFont ☎}}
+\newcommand{\IconVideo}{{\SymbolFont ▶}}
+
 \newcommand{\IconLinkedIn}{\textsf{\textbf{in}}}
 \newcommand{\IconGitHub}{\textsf{\textbf{GH}}}
-\newcommand{\IconVideo}{\symbol{"25B6}}    % ▶

@@ -39,6 +39,7 @@ jobs:
                 apt-get update && apt-get install -y --no-install-recommends \
                   fontconfig \
                   fonts-noto \
+                  fonts-dejavu \
                   texlive \
                   texlive-latex-base \
                   texlive-latex-recommended
@@ -47,6 +48,7 @@ jobs:
                 apk add --no-cache \
                   fontconfig \
                   font-noto \
+                  font-dejavu \
                   texlive \
                   texmf-dist \
                   texmf-dist-latex
