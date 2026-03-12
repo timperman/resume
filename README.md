@@ -57,7 +57,8 @@ The PDF version of this resume is generated automatically by a public GitHub Act
 
 - Led Core Engineering, a cross-organizational enablement team that partnered with product teams to modernize applications for cloud deployments and to implement best practices such as containerization, CI/CD pipelines, and monitoring.
 - Led large-scale migrations including:
-  - Migrating on-prem deployments to cloud and on-prem Kubernetes clusters.
+  - Migrating on-prem deployments to cloud (Azure AKS) and on-prem Kubernetes clusters.
+    - Assisted teams in migrating on-prem databases to Azure-based services and adopting best practices for data replication in hybrid deployments.
   - Migrating code repositories from on-prem GitLab and GitHub Enterprise to GitHub.com.
   - Migrating CI/CD pipelines from GitLab CI and TeamCity to GitHub Actions.
 - Automated build and deployment pipelines across multiple platforms.
@@ -91,7 +92,7 @@ END: PDF-only presentation -->
 ## Technical Skills
 
 **Cloud & Automation:** AWS, Azure, Terraform, Google Cloud  
-**Containers & Orchestration:** Docker, Kubernetes (EKS), Helm  
+**Containers & Orchestration:** Docker, Kubernetes (EKS, AKS), Helm  
 **CI/CD:** GitHub Actions, GitLab CI, Flux, Jenkins  
 **Languages & Scripting:** Node.js, TypeScript, Go, Java, Python, Bash  
 **Monitoring & Observability:** Prometheus, Grafana, ELK  
