@@ -1,5 +1,5 @@
 # Brett Timperman
-**DevOps / Cloud Engineer**  
+**DevOps / Platform Engineer**  
 Cincinnati, OH  
 
 <!-- BEGIN: GitHub-only contact (emoji) -->
@@ -40,7 +40,7 @@ The PDF version of this resume is generated automatically by a public GitHub Act
 - Automated infrastructure provisioning on AWS using Terraform and cloud-native tooling.
 - Operated and supported Kubernetes-based platforms on AWS EKS with production-grade observability (Prometheus, Grafana, CloudWatch).
 - Operated and supported Docker container registries using JFrog Artifactory and AWS ECR.
-- Implemented security scanning with Snyk and resolved surfaced issues.
+- Implemented Static Application Security Testing (SAST) with Snyk and resolved surfaced issues.
 - Improved deployment reliability and reduced operational toil through automation.
 
 ---
@@ -67,7 +67,7 @@ The PDF version of this resume is generated automatically by a public GitHub Act
   - Implemented downtime-free deployments to Kubernetes and other cloud platforms using continuous delivery best practices such as roll outs, blue/green deployments, and canary deployments.
 - Led early Docker container adoption and Kubernetes platform standardization initiatives.
 - Supported JFrog Artifactory Docker container registry with replication between cloud and on-prem instances.
-  - Implemented security scanning (SAST) at the container level with JFrog XRay.
+  - Implemented security scanning (SCA) at the container level with JFrog XRay.
 - Collaborated with engineering teams to improve reliability, performance, and scalability.
 
 ---
