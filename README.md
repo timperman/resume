@@ -36,9 +36,11 @@ The PDF version of this resume is generated automatically by a public GitHub Act
 ### Workday — DevOps / Platform Engineer  
 *August 2023 – September 2025*
 
-- Built and maintained CI/CD pipelines supporting enterprise SaaS platforms.
-- Automated infrastructure provisioning using Terraform and cloud-native tooling.
-- Operated and supported Kubernetes-based platforms with production-grade observability.
+- Built and maintained CI/CD pipelines (GitHub Actions, Flux/GitOps, Jenkins) supporting enterprise SaaS platforms.
+- Automated infrastructure provisioning on AWS using Terraform and cloud-native tooling.
+- Operated and supported Kubernetes-based platforms on AWS EKS with production-grade observability (Prometheus, Grafana, CloudWatch).
+- Operated and supported Docker container registries using JFrog Artifactory and AWS ECR.
+- Implemented security scanning with Snyk and resolved surfaced issues.
 - Improved deployment reliability and reduced operational toil through automation.
 
 ---
@@ -46,23 +48,26 @@ The PDF version of this resume is generated automatically by a public GitHub Act
 ### Pantomath — Software Engineer  
 *January 2023 – July 2023*
 
-- Developed Node.js microservices for secure client database exports and data extraction.
+- Developed Node.js microservices in Typescript for secure client database exports and data extraction.
 - Deployed extraction services as containerized workloads on AWS EKS.
 - Designed and executed hybrid cloud/on-prem deployments using Docker for TQL environments.
 
 ---
 
-### Kroger — Software Engineering Manager
+### Kroger — Software Engineering Manager, Principal Software Engineer
 *February 2013 – April 2022*
 
-- Led Core Engineering, a cross-organizational enablement team that partnered with product teams to modernize applications for cloud deployments and to implement best practices such as containerization, CI/CD pipelines, and monitoring.
+- Led Core Engineering, a cross-organizational enablement team that partnered with product teams to modernize applications for cloud deployments (Azure AKS, Google Cloud, Rancher) and to implement best practices such as containerization (Docker), CI/CD pipelines (GitHub Actions, GitLab CI), and monitoring (Prometheus, Grafana, ElasticSearch, Kibana, Kafka).
 - Led large-scale migrations including:
-  - Migrating on-prem deployments to cloud (Azure AKS) and on-prem Kubernetes clusters.
+  - Migrating on-prem deployments to cloud (Azure AKS) and on-prem Kubernetes clusters (Rancher).
     - Assisted teams in migrating on-prem databases to Azure-based services and adopting best practices for data replication in hybrid deployments.
   - Migrating code repositories from on-prem GitLab and GitHub Enterprise to GitHub.com.
   - Migrating CI/CD pipelines from GitLab CI and TeamCity to GitHub Actions.
-- Automated build and deployment pipelines across multiple platforms.
-- Led early container adoption and platform standardization initiatives.
+- Partnered with a large variety of product teams to implement CI/CD pipelines (GitHub Actions, GitLab CI, Azure DevOps) that automated building, testing, and deploying Java/SpringBoot (Maven and Gradle), Node.js (NPM), and other applications.
+  - Implemented downtime-free deployments to Kubernetes and other cloud platforms using continuous delivery best practices such as roll outs, blue/green deployments, and canary deployments.
+- Led early Docker container adoption and Kubernetes platform standardization initiatives.
+- Supported JFrog Artifactory Docker container registry with replication between cloud and on-prem instances.
+  - Implemented security scanning (SAST) at the container level with JFrog XRay.
 - Collaborated with engineering teams to improve reliability, performance, and scalability.
 
 ---
@@ -91,9 +96,13 @@ END: PDF-only presentation -->
 
 ## Technical Skills
 
-**Cloud & Automation:** AWS, Azure, Terraform, Google Cloud  
-**Containers & Orchestration:** Docker, Kubernetes (EKS, AKS), Helm  
-**CI/CD:** GitHub Actions, GitLab CI, Flux, Jenkins  
-**Languages & Scripting:** Node.js, TypeScript, Go, Java, Python, Bash  
-**Monitoring & Observability:** Prometheus, Grafana, ELK  
+**Cloud & Automation:** AWS, Azure, Google Cloud, Terraform infrastructure-as-code
+**Containers & Orchestration:** Docker, Kubernetes (AWS EKS, Azure AKS, Google GKE), Helm  
+**Container Storage:** JFrog Artifactory, AWS ECR, Docker Registry
+**CI/CD:** GitHub Actions, GitLab CI, Flux (GitOps), Jenkins
+**Languages & Scripting:** Node.js, TypeScript, Go, Java/SpringBoot, Python, Bash
+**Build Tools:** NPM, Maven, Gradle
+**Security Scanning:** JFrog XRay, Snyk
+**Monitoring & Observability:** Prometheus, Grafana, ELK (ElasticSearch and Kibana), Kafka
+**Databases & Persistence:** SQL (PostgreSQL, MySQL, AWS RDS, Azure Database), MongoDB, Redis, AWS S3
 **Platforms:** Linux, Hybrid Cloud / On-Prem
