@@ -96,13 +96,13 @@ END: PDF-only presentation -->
 
 ## Technical Skills
 
-**Cloud & Automation:** AWS, Azure, Google Cloud, Terraform infrastructure-as-code
-**Containers & Orchestration:** Docker, Kubernetes (AWS EKS, Azure AKS, Google GKE), Helm  
-**Container Storage:** JFrog Artifactory, AWS ECR, Docker Registry
-**CI/CD:** GitHub Actions, GitLab CI, Flux (GitOps), Jenkins
-**Languages & Scripting:** Node.js, TypeScript, Go, Java/SpringBoot, Python, Bash
-**Build Tools:** NPM, Maven, Gradle
-**Security Scanning:** JFrog XRay, Snyk
-**Monitoring & Observability:** Prometheus, Grafana, ELK (ElasticSearch and Kibana), Kafka
-**Databases & Persistence:** SQL (PostgreSQL, MySQL, AWS RDS, Azure Database), MongoDB, Redis, AWS S3
-**Platforms:** Linux, Hybrid Cloud / On-Prem
+**Cloud & Automation:** AWS, Azure, Google Cloud, Terraform infrastructure-as-code   
+**Containers & Orchestration:** Docker, Kubernetes (AWS EKS, Azure AKS, Google GKE), Helm   
+**Container Storage:** JFrog Artifactory, AWS ECR, Docker Registry   
+**CI/CD:** GitHub Actions, GitLab CI, Flux (GitOps), Jenkins   
+**Languages & Scripting:** Node.js, TypeScript, Go, Java/SpringBoot, Python, Bash   
+**Build Tools:** NPM, Maven, Gradle   
+**Security Scanning:** JFrog XRay, Snyk   
+**Monitoring & Observability:** Prometheus, Grafana, ELK (ElasticSearch and Kibana), Kafka   
+**Databases & Persistence:** SQL (PostgreSQL, MySQL, AWS RDS, Azure Database), MongoDB, Redis, AWS S3   
+**Platforms:** Linux, Hybrid Cloud / On-Prem   
