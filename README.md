@@ -100,7 +100,7 @@ END: PDF-only presentation -->
 **Containers & Orchestration:** Docker, Kubernetes (AWS EKS, Azure AKS, Google GKE), Helm   
 **Container Storage:** JFrog Artifactory, AWS ECR, Docker Registry   
 **CI/CD:** GitHub Actions, GitLab CI, Flux (GitOps), Jenkins   
-**Languages & Scripting:** Node.js, TypeScript, Go, Java/SpringBoot, Python, Bash   
+**Languages & Scripting:** Node.js, TypeScript, Go, Java/SpringBoot, Python, Bash, React.js, Angular   
 **Build Tools:** NPM, Maven, Gradle   
 **Security Scanning:** JFrog XRay, Snyk   
 **Monitoring & Observability:** Prometheus, Grafana, ELK (ElasticSearch and Kibana), Kafka   
