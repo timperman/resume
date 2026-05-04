@@ -48,7 +48,7 @@ The PDF version of this resume is generated automatically by a public GitHub Act
 ### Pantomath — Software Engineer  
 *January 2023 – July 2023*
 
-- Developed Node.js microservices in Typescript for secure client database exports and data extraction.
+- Developed Node.js REST microservices in Typescript for secure client database exports and data extraction.
 - Deployed extraction services as containerized workloads on AWS EKS.
 - Designed and executed hybrid cloud/on-prem deployments using Docker for TQL environments.
 
@@ -68,6 +68,7 @@ The PDF version of this resume is generated automatically by a public GitHub Act
 - Led early Docker container adoption and Kubernetes platform standardization initiatives.
 - Supported JFrog Artifactory Docker container registry with replication between cloud and on-prem instances.
   - Implemented security scanning (SCA) at the container level with JFrog XRay.
+- Developed full-stack web-applications supporting Kroger Pickup and Delivery including React.js and Angular front-end applications and Java/SpringBoot back-end REST services.
 - Collaborated with engineering teams to improve reliability, performance, and scalability.
 
 ---
