@@ -2,21 +2,6 @@
 **DevOps / Platform Engineer**  
 Cincinnati, OH  
 
-<!-- BEGIN: GitHub-only contact (emoji) -->
-📧 brett.timperman@gmail.com  
-📞 (513) 713-5314  
-🔗 [LinkedIn](https://www.linkedin.com/in/brett-timperman)  
-💻 [GitHub](https://github.com/timperman)
-<!-- END: GitHub-only contact (emoji) -->
-<!-- BEGIN: PDF-only contact
-\begin{flushleft}
-\IconEnvelope\ brett.timperman@gmail.com\\
-\IconPhone\ (513) 713-5314\\
-\IconLinkedIn\ \href{https://www.linkedin.com/in/brett-timperman}{LinkedIn}\\
-\IconGitHub\ \href{https://github.com/timperman}{GitHub}
-\end{flushleft}
-END: PDF-only contact -->
-
 ---
 
 ## Professional Summary
