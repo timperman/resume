@@ -21,7 +21,7 @@ END: PDF-only contact -->
 
 ## Professional Summary
 
-DevOps and Platform Engineer with deep experience in containerization, Kubernetes, CI/CD automation, and hybrid cloud/on-prem architectures. Proven ability to design, deploy, and operate scalable infrastructure across enterprise and startup environments. DockerCon 2016 presenter with strong communication and cross-team collaboration skills.
+DevOps, Platform, and Site Reliability Engineer with deep experience in containerization, Kubernetes, CI/CD automation, and hybrid cloud/on-prem architectures. Proven ability to design, deploy, and operate scalable infrastructure across enterprise and startup environments. DockerCon 2016 presenter with strong communication and cross-team collaboration skills.
 
 ---
 
