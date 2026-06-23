@@ -1,5 +1,5 @@
 # Brett Timperman
-**DevOps / Platform Engineer**  
+**Senior Software Engineer (DevOps, Platform, Site Reliability)**  
 Cincinnati, OH  
 
 <!-- BEGIN: GitHub-only contact (emoji) -->
