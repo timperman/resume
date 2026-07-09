@@ -21,13 +21,7 @@ END: PDF-only contact -->
 
 ## Professional Summary
 
-DevOps and Platform Engineer with deep experience in containerization, Kubernetes, CI/CD automation, and hybrid cloud/on-prem architectures. Proven ability to design, deploy, and operate scalable infrastructure across enterprise and startup environments. DockerCon 2016 presenter with strong communication and cross-team collaboration skills.
-
----
-
-## Resume-as-Code
-
-The PDF version of this resume is generated automatically by a public GitHub Actions pipeline in my resume repository (https://github.com/timperman/resume). I maintain the resume by committing changes to `README.md`, which serves as the single source of truth. A GitHub Actions workflow uses Markdown, LaTeX, and lightweight shell scripting to produce a polished PDF and commit it back to the repository. This approach ensures the GitHub-rendered resume and the downloadable PDF remain perfectly in sync, and reflects my commitment to *everything-as-code*—from infrastructure and CI/CD to documentation and workflows.
+DevOps and Platform Engineer with deep experience in containerization, Kubernetes, CI/CD automation, and hybrid cloud/on-prem architectures.
 
 ---
 
@@ -36,34 +30,25 @@ The PDF version of this resume is generated automatically by a public GitHub Act
 ### Workday — DevOps / Platform Engineer  
 *August 2023 – September 2025*
 
-- Built and maintained CI/CD pipelines supporting enterprise SaaS platforms.
-- Automated infrastructure provisioning using Terraform and cloud-native tooling.
-- Operated and supported Kubernetes-based platforms with production-grade observability.
-- Improved deployment reliability and reduced operational toil through automation.
+- CI/CD pipelines, infrastructure-as-code, Kubernetes, Prometheus, AWS EKS
 
 ---
 
 ### Pantomath — Software Engineer  
 *January 2023 – July 2023*
 
-- Developed Node.js microservices for secure client database exports and data extraction.
-- Deployed extraction services as containerized workloads on AWS EKS.
-- Designed and executed hybrid cloud/on-prem deployments using Docker for TQL environments.
+- Node.js microservices, AWS EKS, hybrid cloud/on-prem deployments, Docker
 
 ---
 
 ### Kroger — Software Engineering Manager
 *February 2013 – April 2022*
 
-- Led Core Engineering, a cross-organizational enablement team that partnered with product teams to modernize applications for cloud deployments and to implement best practices such as containerization, CI/CD pipelines, and monitoring.
+- Led Core Engineering, a cross-functional enablement team focused on CI/CD, Kubernetes, and cloud
 - Led large-scale migrations including:
   - Migrating on-prem deployments to cloud (Azure AKS) and on-prem Kubernetes clusters.
-    - Assisted teams in migrating on-prem databases to Azure-based services and adopting best practices for data replication in hybrid deployments.
   - Migrating code repositories from on-prem GitLab and GitHub Enterprise to GitHub.com.
   - Migrating CI/CD pipelines from GitLab CI and TeamCity to GitHub Actions.
-- Automated build and deployment pipelines across multiple platforms.
-- Led early container adoption and platform standardization initiatives.
-- Collaborated with engineering teams to improve reliability, performance, and scalability.
 
 ---
 
